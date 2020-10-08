@@ -1,0 +1,16 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ./head %>
+</head>
+<body class="container">
+
+    <ul class="list-unstyled"></ul>
+    <% workshops.forEach(function(workshop) { %>
+        <li class="media my-4">
+            <div class="media-body">
+                <h5 class="mt-0 mb-1"><%= workshop.name %></h5>
+                <%= workshop.description %>        </div>        
+        </li>
+    <% }); %>
+    </ul>    
